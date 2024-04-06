@@ -1,36 +1,46 @@
 @import 'modern-normalize/modern-normalize.css';
 
 :root {
-    /** Colors **/
-    --basic-white: #fcfbfb;
-    --basic-grey: #606161;
-    --basic-black: #111010;
+  /** Colors **/
+  --basic-white: #fcfbfb;
+  --basic-grey: #606161;
+  --basic-black: #111010;
 
-    /** Gradients **/
+  /** Gradients **/
 
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /** Font **/
+  --font-family: 'Montserrat', sans-serif;
+  --title-font-size: 24px;
+  --title-font-weight: 500;
+  --basic-font-size: 16px;
+  --basic-font-weight: 500;
+
+  /** Transition **/
+
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: 'Montserrat', sans-serif;
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    font-family: Montserrat, sans-serif;
+  margin: 0;
+  font-family: var(--font-family);
 }
 
-main {
-    min-height: 3200px;
-}
+/* main {
+    
+} */
 
 h1,
 h2,
@@ -40,72 +50,59 @@ p,
 ul,
 ol,
 li {
-    font-family: Montserrat, sans-serif;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 500;
 }
 
 input {
-    padding: 16px;
+  padding: 0;
 }
 
 figure {
-    margin: 0;
-    width: 100%;
+  margin: 0;
+  width: 100%;
 }
 
 img {
-    display: block;
+  display: block;
+  width: 100%;
 }
 
-.list {
-    list-style-type: none;
-}
-
-.link {
-    text-decoration: none;
+ul,
+ol {
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-}
-
-img {
-    display: block;
-    max-width: 100%;
+  font-family: var(--font-family);
+  text-decoration: none;
 }
 
 button {
-    cursor: pointer;
-
-    margin: 0;
-    padding: 0;
-
-    font-family: sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 24px;
+  cursor: pointer;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
 }
 
 .is-hidden {
-    display: none;
+  display: none;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
 }
-
