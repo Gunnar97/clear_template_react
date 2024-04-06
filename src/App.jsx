@@ -1,13 +1,13 @@
-import { Route, Routes } from "react-router-dom";
-import "./App.css";
+import { Route, Routes } from 'react-router-dom';
+import './App.css';
 
-import { lazy } from "react";
-import Layout from "./components/Layout/Layout";
-import ScrollButton from "./helpers/ScrollToTop/ScrollButton";
+import { lazy } from 'react';
+import Layout from './components/Layout/Layout';
+import ScrollButton from './helpers/ScrollToTop/ScrollButton';
 
-const WelcomePage = lazy(() => import("./pages/WelcomePage/WelkomePage"));
+const WelcomePage = lazy(() => import('./pages/WelcomePage/WelcomePage'));
 
-const NotFoundPage = lazy(() => import("./pages/NotFoundPage/NotFoundPage"));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage/NotFoundPage'));
 
 function App() {
   return (

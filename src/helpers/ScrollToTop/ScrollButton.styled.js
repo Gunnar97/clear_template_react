@@ -1,13 +1,15 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Button = styled.div`
+export const Button = styled.button`
   position: fixed;
-  width: 100%;
+  width: 20px;
   left: 90%;
-  bottom: 40px;
+  bottom: 10%;
   height: 20px;
   font-size: 3rem;
   z-index: 100;
   cursor: pointer;
-  color: green;
+  /* color: green; */
+  border: none;
+  background: transparent;
 `;
